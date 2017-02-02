@@ -13,7 +13,10 @@ The goal of the project is to utilize Microsoft Cognitive Services, specifically
 - [ ] Create a blob storage, and create "folders" with the personId as the name of each folder, Upload photos of guests in each folder
 - [ ] Create a Azure function that gets triggered when a new file is uploaded to the blob storage and submits to [Person Face](https://dev.projectoxford.ai/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f3039523b) to be trained with the corresponding personId
 
-## Phase 2 - Identification
+## Phase 2 - Identification on webcam
 - [ ] Acquire a bitstream from getUserMedia and display in a `canvas`.
 - [ ] Find a sustainable way to feed the images to the [Face - Identify](https://dev.projectoxford.ai/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395239) API.
-- [ ] Display the identities in a bounding box on screen.
+- [ ] Display the identities in a bounding box on screen by querying the DocDB with the returned PersonId
+- [ ] Create User onboard process (tagging people before they take the picture)
+
+## Phase 3 - Image communication on DSLR
